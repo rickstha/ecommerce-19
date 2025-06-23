@@ -25,7 +25,6 @@ const ShoppingCart = () => {
           <h3 className="cart__title">Shopping Cart</h3>
           <CheckoutStatus step="cart" />
         </div>
-
         <div className="cart-list">
           {cartItems.length > 0 && (
             <table>
@@ -57,7 +56,18 @@ const ShoppingCart = () => {
 
           {cartItems.length === 0 && <p>Nothing in the cart</p>}
         </div>
-
+        {/* new code bigins here */}
+        <div>
+          <p className="cart_empty">
+            {cartItems.length === 0 && "Cart is Empty"}
+          </p>
+          <div className="cart_next">
+            <Link href="/products" className="cart__btn-back">
+              <i className="icon-left" /> Continue Shopping
+            </Link>
+          </div>
+        </div>
+        {/* new code ends */}
         <div className="cart-actions">
           <Link href="/products" className="cart__btn-back">
             <i className="icon-left" /> Continue Shopping

@@ -6,11 +6,6 @@ import Header from "@/components/header";
 type LayoutType = {
   title?: string;
   children?: React.ReactNode;
-  isErrorPage?: boolean;
-
-  isHomePage?: boolean;
-  isProductPage?: boolean;
-  isCategoryPage?: boolean;
 };
 
 const ErrorPage = ({ children, title = "Next.js Ecommerce" }: LayoutType) => {

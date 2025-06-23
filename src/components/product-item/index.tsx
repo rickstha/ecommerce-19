@@ -23,7 +23,7 @@ const ProductItem = ({
     dispatch(
       toggleFavProduct({
         id,
-      }),
+      })
     );
   };
 
@@ -56,6 +56,5 @@ const ProductItem = ({
     </div>
   );
 };
-//only login button click required. 003s
 
 export default ProductItem;

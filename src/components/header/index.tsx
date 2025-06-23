@@ -18,7 +18,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
   const arrayPaths = ["/"];
 
   const [onTop, setOnTop] = useState(
-    !(!arrayPaths.includes(router.pathname) || isErrorPage),
+    !(!arrayPaths.includes(router.pathname) || isErrorPage)
   );
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -52,7 +52,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
     setSearchOpen(false);
   };
 
-  // on click outside
+  //for casual use only for front end developer
   useOnClickOutside(navRef, closeMenu);
   useOnClickOutside(searchRef, closeSearch);
 
@@ -62,7 +62,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
         <Link href="/">
           <h1 className="site-logo">
             <Logo />
-            E-Shop
+            Farnite E-Shop
           </h1>
         </Link>
         <nav
@@ -76,7 +76,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
             <p>Account</p>
           </button>
         </nav>
-
+        {/* use this for just one header */}
         <div className="site-header__actions">
           <button
             ref={searchRef}
@@ -106,6 +106,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
               )}
             </button>
           </Link>
+          {/* login button only for header */}
           <Link href="/login" legacyBehavior>
             <button className="site-header__btn-avatar">
               <i className="icon-avatar" />

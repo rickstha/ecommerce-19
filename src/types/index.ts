@@ -24,6 +24,7 @@ export type ProductType = {
   count: number;
   color: string;
   size: string;
+  menu?:string[];
   images: string[];
   discount?: string;
   currentPrice: number;
@@ -39,6 +40,7 @@ export type ProductTypeList = {
   images: string[];
   discount?: string;
   currentPrice?: number;
+  
 };
 
 export type ProductStoreType = {

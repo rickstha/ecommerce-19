@@ -24,7 +24,7 @@ const ShoppingCart = ({
         size,
         count,
         price,
-      }),
+      })
     );
   };
 
@@ -55,6 +55,12 @@ const ShoppingCart = ({
         <div className="cart-product">
           <div className="cart-product__img">
             <img src={thumb} alt="" />
+          </div>
+
+          <div className="cart-main">
+            <div className="cart-product__img2">
+              <img src={thumb} alt="" />
+            </div>
           </div>
 
           <div className="cart-product__content">

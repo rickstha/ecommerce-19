@@ -14,9 +14,7 @@ const Range = createSliderWithTooltip(Slider.Range);
 const ProductsFilter = () => {
   const [filtersOpen, setFiltersOpen] = useState(false);
 
-  const addQueryParams = () => {
-    
-  };
+  const addQueryParams = () => {};
 
   return (
     <form className="products-filter" onChange={addQueryParams}>
@@ -35,7 +33,12 @@ const ProductsFilter = () => {
           <button type="button">Product type</button>
           <div className="products-filter__block__content">
             {productsTypes.map((type) => (
-              <Checkbox key={type.id} name="product-type" label={type.name} />
+              <Checkbox
+                key={type.id}
+                name="product-type"
+                label={type.name}
+                mainChar={""}
+              />
             ))}
           </div>
         </div>
@@ -61,6 +64,7 @@ const ProductsFilter = () => {
                 key={type.id}
                 name="product-size"
                 label={type.label}
+                mainChar={""}
               />
             ))}
           </div>

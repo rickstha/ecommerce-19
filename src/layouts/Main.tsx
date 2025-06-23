@@ -6,6 +6,8 @@ import Header from "@/components/header";
 type LayoutType = {
   title?: string;
   children?: React.ReactNode;
+  router?: React.ReactNode;
+  pathmane?: string;
 };
 
 const MainLayout = ({ children, title = "Next.js Ecommerce" }: LayoutType) => {

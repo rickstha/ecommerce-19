@@ -10,6 +10,14 @@ type ProductType = {
   count: number;
   color: string;
   size: string;
+  state:any;
+  //alternative
+  discount?:number;
+  favProducts?:string[];
+  isSignUp?:boolean;
+  isSignOut?:boolean;
+  isRegister?:boolean;
+  
 };
 
 type ToggleFavType = {
@@ -17,9 +25,13 @@ type ToggleFavType = {
 };
 
 interface UserSliceTypes {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  
   user: any;
   favProducts: string[];
+  products?:ProductType[];
+  isSignUp?:boolean;
+  
+
 }
 
 const initialState = {
@@ -27,6 +39,7 @@ const initialState = {
     name: "",
   },
   favProducts: [],
+
 } as UserSliceTypes;
 
 const userSlice = createSlice({
@@ -35,6 +48,7 @@ const userSlice = createSlice({
   reducers: {
     toggleFavProduct(state, action: PayloadAction<ToggleFavType>) {
       const index = state.favProducts.includes(action.payload.id);
+     
 
       if (!index) {
         state.favProducts.push(action.payload.id);
@@ -42,7 +56,7 @@ const userSlice = createSlice({
         return;
       }
 
-      remove(state => id === action.payload.id);
+    
     },
     setUserLogged(state, action: PayloadAction<ProductType>) {
       const index = state.favProducts.includes(action.payload.id);

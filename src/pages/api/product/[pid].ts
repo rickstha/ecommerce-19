@@ -1,9 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-// fake data
+// dont use this data. This is dummy page. Use from main Product page.
 import products from "@/utils/data/products";
 
-//problem solved
+
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
   const {

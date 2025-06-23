@@ -8,6 +8,10 @@ import { postData } from "../utils/services";
 type LoginMail = {
   email: string;
   password: string;
+  mainData?: any;
+  LoginMail?: string[];
+  handleSubmit?: boolean[];
+  register?: any;
 };
 
 const LoginPage = () => {
