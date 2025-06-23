@@ -18,7 +18,11 @@ type AddProductType = {
   id: any;
   product: ProductStoreType;
   count: number;
- 
+  //new code added
+  productDetails?: string;
+  //new items put here
+  
+
 };
 
 const cartSlice = createSlice({

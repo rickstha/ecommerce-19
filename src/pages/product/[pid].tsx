@@ -8,7 +8,7 @@ import Description from "@/components/product-single/description";
 import Gallery from "@/components/product-single/gallery";
 import Reviews from "@/components/product-single/reviews";
 import ProductsFeatured from "@/components/products-featured";
-// types
+
 import type { ProductType } from "@/types";
 
 import Layout from "../../layouts/Main";
