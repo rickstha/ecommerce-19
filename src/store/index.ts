@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { createWrapper } from "next-redux-wrapper";
-import { persistReducer } from "redux-persist";
+import { persistReducer, persistStore } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
 import cartReducer from "./reducers/cart";
 import userReducer from "./reducers/user";
@@ -27,12 +28,10 @@ const makeStore = ({ isServer }: { isServer: boolean }) => {
       reducer,
     }));
   } else {
-   
     const persistConfig = {
       key: "shoppingcart",
       whitelist: ["cart", "user"], 
-      // storage, 
-      
+      storage, 
     };
 
     const persistedReducer = persistReducer(persistConfig, rootReducer); // Create a new reducer with our existing reducer
@@ -41,10 +40,8 @@ const makeStore = ({ isServer }: { isServer: boolean }) => {
       reducer: persistedReducer,
     }); 
 
-    
     (store as typeof store & { __persistor?: any }).__persistor = persistStore(store); 
     return store;
-    
   }
 
 };
