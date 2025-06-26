@@ -1,3 +1,4 @@
+//done
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 import type { ProductStoreType } from "@/types";
@@ -5,7 +6,9 @@ import type { ProductStoreType } from "@/types";
 
 interface CartTypes {
   cartItems: ProductStoreType[];
-  removeProduct: any
+  
+  addProduct:any
+  updateProduct?:any
   
 }
 
@@ -18,9 +21,9 @@ type AddProductType = {
   id: any;
   product: ProductStoreType;
   count: number;
-  //new code added
+  //new updated
   productDetails?: string;
-  //new items put here
+  //update cancel
   
 
 };

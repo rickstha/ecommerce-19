@@ -1,4 +1,5 @@
 // global styles
+//done
 import "../assets/css/styles.scss";
 import "swiper/swiper.scss";
 import "rc-slider/assets/index.css";

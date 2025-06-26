@@ -1,3 +1,4 @@
+//done
 import type { GtagEventType } from "@/types";
 
 export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_ANALYTICS_ID; // This is your GA Tracking ID

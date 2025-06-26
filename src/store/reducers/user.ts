@@ -11,12 +11,10 @@ type ProductType = {
   color: string;
   size: string;
   state:any;
-  //alternative
-  discount?:number;
-  favProducts?:string[];
-  isSignUp?:boolean;
-  isSignOut?:boolean;
-  isRegister?:boolean;
+ 
+  
+  registerPage:any;
+
   
 };
 
@@ -29,9 +27,10 @@ interface UserSliceTypes {
   user: any;
   favProducts: string[];
   products?:ProductType[];
-  isSignUp?:boolean;
+   isSingIn?:boolean;
+  isSignOut?:boolean;
+  forgotPassword?: any[];
   
-
 }
 
 const initialState = {
@@ -55,7 +54,6 @@ const userSlice = createSlice({
 
         return;
       }
-
     
     },
     setUserLogged(state, action: PayloadAction<ProductType>) {

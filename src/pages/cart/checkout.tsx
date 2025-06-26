@@ -1,3 +1,4 @@
+//done
 import Link from "next/link";
 import { useSelector } from "react-redux";
 
@@ -107,13 +108,12 @@ const CheckoutPage = () => {
                         <select>
                           <option>Country</option>
                           <option value="Nepal">Nepal</option>
-                        
+
                           <option value="India">India</option>
                           <option value="China">China</option>
                           <option value="Srilanka">Srilanka</option>
                           <option value="Bangladesh">Bangladesh</option>
                           <option value="Pakistan">Pakistan</option>
-                          
                         </select>
                       </div>
                     </div>
@@ -177,7 +177,7 @@ const CheckoutPage = () => {
 
                 <div className="checkout-total">
                   <p>Total cost</p>
-                  <h3 >${Math.round(priceTotal)}</h3>
+                  <h3>${Math.round(priceTotal)}</h3>
                 </div>
               </div>
             </div>
@@ -199,8 +199,6 @@ const CheckoutPage = () => {
         </div>
       </section>
     </Layout>
-
-    
   );
 };
 
