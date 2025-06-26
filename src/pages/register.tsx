@@ -1,4 +1,3 @@
-//done
 import Link from "next/link";
 
 import Layout from "../layouts/Main";

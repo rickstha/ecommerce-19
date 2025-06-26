@@ -1,3 +1,4 @@
+//done
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 import { remove } from "lodash";
@@ -9,9 +10,12 @@ type ProductType = {
   price: string;
   count: number;
   color: string;
-  size: string;
-  state:any;
-  registerPage:any; 
+
+  // changes needed
+
+  // size: string;
+  // state:any;
+  // registerPage:any; 
 };
 
 type ToggleFavType = {

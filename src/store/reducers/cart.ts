@@ -6,7 +6,6 @@ import type { ProductStoreType } from "@/types";
 
 interface CartTypes {
   cartItems: ProductStoreType[];
-  
   addProduct:any
   updateProduct?:any
   
@@ -21,10 +20,11 @@ type AddProductType = {
   id: any;
   product: ProductStoreType;
   count: number;
-  //new updated
-  productDetails?: string;
-  //update cancel
-  
+
+  //no need to do this but dont delete. ----------------------------------------------------------
+
+  // productDetails?: string;
+
 
 };
 
