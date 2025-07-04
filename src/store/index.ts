@@ -11,6 +11,8 @@ import userReducer from "./reducers/user";
 const reducer = {
   cart: cartReducer,
   user: userReducer,
+  delete: userReducer,
+  
   update:userReducer,
 };
 
@@ -18,6 +20,7 @@ const reducer = {
 let store = configureStore({
   reducer,
 });
+
 
 
 const makeStore = () => {

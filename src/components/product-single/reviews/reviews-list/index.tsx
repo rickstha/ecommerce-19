@@ -1,10 +1,12 @@
+//done the typescrpt part. main code remaining
 import Rater from "react-rater";
-
 import type { ReviewType } from "@/types";
 import createMarkup from "@/utils/markup";
 
 type ReviewsListType = {
+  show: boolean;
   reviews: ReviewType[];
+  description?: string[];
 };
 
 const ReviewsList = ({ reviews }: ReviewsListType) => {

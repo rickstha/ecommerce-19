@@ -1,5 +1,7 @@
+//typescript done,main code remaining
 type ProductDescriptionType = {
   show: boolean;
+  products?: any[];
 };
 
 const Description = ({ show }: ProductDescriptionType) => {

@@ -1,3 +1,4 @@
+//done
 import Slider from "rc-slider";
 import { useState } from "react";
 
@@ -10,7 +11,7 @@ import CheckboxColor from "./form-builder/checkbox-color";
 //main code
 const { createSliderWithTooltip } = Slider;
 const Range = createSliderWithTooltip(Slider.Range);
-//filter component
+//filter component, not needed use another code here
 const ProductsFilter = () => {
   const [filtersOpen, setFiltersOpen] = useState(false);
 

@@ -1,4 +1,3 @@
-// global styles
 //done
 import "../assets/css/styles.scss";
 import "swiper/swiper.scss";
@@ -18,7 +17,7 @@ const isProduction = process.env.NODE_ENV === "production";
 
 // only events on production
 if (isProduction) {
-  // Notice how we track pageview when route is changed
+  // Notice how we track pageview when route is changed // not needed
   Router.events.on("routeChangeComplete", (url: string) => gtag.pageview(url));
 }
 
@@ -40,3 +39,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
 );
 
 export default wrapper.withRedux(MyApp);
+
+// for future use
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600"],
+//   variable: "--main-font",
+// });

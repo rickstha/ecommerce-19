@@ -1,4 +1,4 @@
-//done
+//done but no idea about the error
 import type { GetServerSideProps } from "next";
 import { useState } from "react";
 
