@@ -12,7 +12,7 @@ const reducer = {
   cart: cartReducer,
   user: userReducer,
   delete: userReducer,
-  
+
   update:userReducer,
 };
 
@@ -24,7 +24,7 @@ let store = configureStore({
 
 
 const makeStore = () => {
-  // Detect if running on the server
+  // Detect if running on the server // these coments arent needed so dont write these kind of coment in the middle of code
   const isServer = typeof window === "undefined";
   if (isServer) {
     return configureStore({
