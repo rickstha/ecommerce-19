@@ -11,11 +11,8 @@ type ProductType = {
   count: number;
   color: string;
 
-  // changes needed
 
-  // size: string;
-  // state:any;
-  // registerPage:any; 
+
 };
 
 type ToggleFavType = {
