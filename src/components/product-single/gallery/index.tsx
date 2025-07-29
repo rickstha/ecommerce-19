@@ -1,4 +1,3 @@
-//this page need to change. theres no images and api so this is an empty page. change asap
 type GalleryProductType = {
   images: string[];
   products?: any[];
