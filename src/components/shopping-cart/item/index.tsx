@@ -1,5 +1,4 @@
 import { useDispatch } from "react-redux";
-
 import removeProduct from "@/store/reducers/cart";
 import setCount from "@/store/reducers/cart";
 import type { ProductStoreType } from "@/types";
@@ -11,6 +10,7 @@ export type CartTypes = {
   count: number;
   price: number;
   thumb: string;
+  name?: string;
 };
 const ShoppingCart = ({
   thumb,
@@ -22,6 +22,8 @@ const ShoppingCart = ({
   price,
 }: ProductStoreType) => {
   const dispatch = useDispatch();
+
+  //solve this
 
   const removeFromCart = () => {
     dispatch(
