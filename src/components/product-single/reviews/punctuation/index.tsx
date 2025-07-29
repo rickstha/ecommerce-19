@@ -1,4 +1,3 @@
-//dont no error
 import Rater from "react-rater";
 import type { PunctuationType } from "@/types";
 const Punctuation = ({
