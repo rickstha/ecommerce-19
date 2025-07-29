@@ -1,4 +1,4 @@
-//done the typescrpt part. main code remaining
+//done
 import Rater from "react-rater";
 import type { ReviewType } from "@/types";
 import createMarkup from "@/utils/markup";
@@ -33,3 +33,5 @@ const ReviewsList = ({ reviews }: ReviewsListType) => {
 };
 
 export default ReviewsList;
+
+//use AI

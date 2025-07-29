@@ -1,4 +1,3 @@
-//no done yet some typescript check remaining
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -9,6 +8,7 @@ type LayoutType = {
   children?: React.ReactNode;
   router?: React.ReactNode;
   pathmane?: string;
+  //optional
   header?: React.ReactNode;
   head?: React.ReactNode;
   error?: React.ReactNode;

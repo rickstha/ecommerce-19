@@ -1,17 +1,16 @@
-//done
 import Slider from "rc-slider";
 import { useState } from "react";
 
 import productsColors from "../../utils/data/products-colors";
 import productsSizes from "../../utils/data/products-sizes";
-// data
+
 import productsTypes from "../../utils/data/products-types";
 import Checkbox from "./form-builder/checkbox";
 import CheckboxColor from "./form-builder/checkbox-color";
-//main code
+
 const { createSliderWithTooltip } = Slider;
 const Range = createSliderWithTooltip(Slider.Range);
-//filter component, not needed use another code here
+
 const ProductsFilter = () => {
   const [filtersOpen, setFiltersOpen] = useState(false);
 
@@ -43,7 +42,7 @@ const ProductsFilter = () => {
             ))}
           </div>
         </div>
-        {/* filter block for price */}
+
         <div className="products-filter__block">
           <button type="button">Price</button>
           <div className="products-filter__block__content">

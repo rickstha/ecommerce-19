@@ -1,4 +1,3 @@
-//typescript done, need to maintain the main code and dont use ectra coments in code
 import type { ProductType } from "@/types";
 import Punctuation from "./punctuation";
 import ReviewsList from "./reviews-list";
@@ -8,10 +7,12 @@ type ReviewsProductType = {
   display: boolean;
   product: ProductType;
   cart: ProductType;
+  //optional
   reviews?: React.ReactNode;
-  votes?: Number[];
   punctuation?: ProductType;
+  votes?: Number[];
   countOpinions?: React.ReactNode[];
+  ReviewsList?: React.ReactNode[];
 };
 
 const Reviews = ({ show, product }: ReviewsProductType) => {
@@ -32,3 +33,5 @@ const Reviews = ({ show, product }: ReviewsProductType) => {
 };
 
 export default Reviews;
+
+//these files need to change through code API

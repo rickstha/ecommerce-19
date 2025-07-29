@@ -11,6 +11,9 @@ const ProductsContent = () => {
         <h2>
           Men's Tops <span>(133)</span>
         </h2>
+        <h2>
+          Women's Wear <span>(144)</span>
+        </h2>
         <button
           type="button"
           onClick={() => setOrderProductsOpen(!orderProductsOpen)}

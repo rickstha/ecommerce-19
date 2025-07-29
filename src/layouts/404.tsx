@@ -1,4 +1,3 @@
-//done
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -7,6 +6,11 @@ import Header from "@/components/header";
 type LayoutType = {
   title?: string;
   children?: React.ReactNode;
+  isErrorPAge?: boolean;
+  isMainPage?: boolean;
+  isProductPage?: boolean;
+  isCheckingPAge?: boolean;
+  isCheckOutPage?: boolean;
 };
 
 const ErrorPage = ({ children, title = "Next.js Ecommerce" }: LayoutType) => {

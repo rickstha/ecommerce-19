@@ -1,5 +1,10 @@
+//done
+import { ReactNode } from "react";
+
 type CheckoutStatusProps = {
   step: string;
+  checkout?: any;
+  orderMenu?: ReactNode;
 };
 
 const CheckoutStatus = ({ step }: CheckoutStatusProps) => {

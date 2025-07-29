@@ -1,7 +1,10 @@
-//typescript done,main code remaining
 type ProductDescriptionType = {
   show: boolean;
   products?: any[];
+  //optional
+  header?: React.ReactNode;
+  head?: React.ReactNode;
+  error?: React.ReactNode;
 };
 
 const Description = ({ show }: ProductDescriptionType) => {

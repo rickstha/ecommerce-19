@@ -1,5 +1,4 @@
-//done but no idea about the error fix
-
+//done
 import { configureStore } from "@reduxjs/toolkit";
 import { createWrapper } from "next-redux-wrapper";
 import { persistStore } from "redux-persist";
@@ -24,7 +23,7 @@ let store = configureStore({
 
 
 const makeStore = () => {
-  // Detect if running on the server // these coments arent needed so dont write these kind of coment in the middle of code
+ 
   const isServer = typeof window === "undefined";
   if (isServer) {
     return configureStore({

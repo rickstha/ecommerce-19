@@ -10,8 +10,9 @@ type ProductType = {
   price: string;
   count: number;
   color: string;
-
-
+  images: string[];
+  discount?: string;
+  currentPrice?: number;
 
 };
 

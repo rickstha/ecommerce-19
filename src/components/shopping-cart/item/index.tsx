@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 
-import { removeProduct, setCount } from "@/store/reducers/cart";
+import removeProduct from "@/store/reducers/cart";
+import setCount from "@/store/reducers/cart";
 import type { ProductStoreType } from "@/types";
 
 const ShoppingCart = ({
@@ -16,15 +17,20 @@ const ShoppingCart = ({
 
   const removeFromCart = () => {
     dispatch(
-      removeProduct({
-        thumb,
-        name,
-        id,
-        color,
-        size,
-        count,
-        price,
-      })
+      removeProduct(
+        {
+          // thumb,
+          id,
+          color,
+          size,
+          count,
+
+          price,
+        },
+        // Add the second argument as required by removeProduct, e.g., an action type or additional payload
+        // Replace 'undefined' with the actual value if needed
+        undefined
+      )
     );
   };
 
@@ -33,20 +39,8 @@ const ShoppingCart = ({
       return;
     }
 
-    const payload = {
-      product: {
-        thumb,
-        name,
-        id,
-        color,
-        size,
-        count,
-        price,
-      },
-      count,
-    };
-
-    dispatch(setCount(payload));
+    // Update to match the expected properties of CartTypes
+    dispatch(setCount({ id, count }, undefined));
   };
 
   return (

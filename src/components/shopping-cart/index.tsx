@@ -56,7 +56,7 @@ const ShoppingCart = () => {
 
           {cartItems.length === 0 && <p>Nothing in the cart</p>}
         </div>
-        {/* new code bigins here */}
+
         <div>
           <p className="cart_empty">
             {cartItems.length === 0 && "Cart is Empty"}

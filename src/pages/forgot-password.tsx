@@ -1,13 +1,19 @@
-//done
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 
 import Layout from "../layouts/Main";
 import { server } from "../utils/server";
 import { postData } from "../utils/services";
+import { ReactNode } from "react";
 
 type ForgotMail = {
   email: string;
+  password: any;
+  username: string[];
+  dateOfBirth: number;
+  file: any[];
+  children: ReactNode;
+  fn: (params: any) => void;
 };
 
 const ForgotPassword = () => {
@@ -15,7 +21,11 @@ const ForgotPassword = () => {
 
   const onSubmit = async (data: ForgotMail) => {
     await postData(`${server}/api/login`, {
+      username: data.username,
       email: data.email,
+      password: data.password,
+      dateOfBirth: data.dateOfBirth,
+      file: data.file,
     });
   };
 
