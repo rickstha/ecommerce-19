@@ -1,17 +1,17 @@
 type CheckboxType = {
-  type?: string;
   label: string;
   name: string;
-  number?: number;
-  id?: number;
-
   mainChar: string;
+  //optional
+
   mainData?: any;
   checkData?: boolean;
   removeData?: any;
   getData?: any;
+  type?: string;
   changeData?: any;
-
+  number?: number;
+  id?: number;
   onChange?: () => void;
 };
 
