@@ -52,6 +52,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
     setSearchOpen(false);
   };
 
+  //for casual use only for front end developer
   useOnClickOutside(navRef, closeMenu);
   useOnClickOutside(searchRef, closeSearch);
 
@@ -105,7 +106,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
               )}
             </button>
           </Link>
-
+          {/* login button only for header */}
           <Link href="/login" legacyBehavior>
             <button className="site-header__btn-avatar">
               <i className="icon-avatar" />

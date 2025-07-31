@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import Layout from "../layouts/Main";
 import { server } from "../utils/server";
 import { postData } from "../utils/services";
-import { ReactNode } from "react";
+import { Children, ReactNode } from "react";
 
 type ForgotMail = {
   email: string;
@@ -12,7 +12,7 @@ type ForgotMail = {
   username: string[];
   dateOfBirth: number;
   file: any[];
-  children: ReactNode;
+  Children: ReactNode;
   fn: (params: any) => void;
 };
 
@@ -26,6 +26,10 @@ const ForgotPassword = () => {
       password: data.password,
       dateOfBirth: data.dateOfBirth,
       file: data.file,
+      //optional done
+      mainfile: data.file[0],
+      Children: data.Children,
+      //this file need to modify
     });
   };
 
@@ -85,6 +89,7 @@ const ForgotPassword = () => {
                   <p className="message message--error">
                     This field is required
                   </p>
+                  // <p>Use another file if this is necessary</p>
                 )}
               </div>
 

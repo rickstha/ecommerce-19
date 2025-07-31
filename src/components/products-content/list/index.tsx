@@ -1,4 +1,3 @@
-//done
 import useSwr from "swr";
 
 import type { ProductTypeList } from "@/types";

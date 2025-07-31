@@ -8,14 +8,9 @@ const ProductsContent = () => {
   return (
     <section className="products-content">
       <div className="products-content__intro">
-        {/* no backend */}
         <h2>
           Men's Tops <span>(133)</span>
         </h2>
-        <h2>
-          Women's Wear <span>(144)</span>
-        </h2>
-        {/* no backend */}
         <button
           type="button"
           onClick={() => setOrderProductsOpen(!orderProductsOpen)}

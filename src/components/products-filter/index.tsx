@@ -80,12 +80,13 @@ const ProductsFilter = () => {
                   valueName={type.color}
                   name="product-color"
                   color={type.color}
+                  onChange={(value) => console.log(value)}
                 />
               ))}
             </div>
           </div>
         </div>
-
+        {/* need to do backend */}
         <button
           type="submit"
           className="btn btn-submit btn--rounded btn--yellow"

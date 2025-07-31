@@ -1,3 +1,4 @@
+// import Swiper core and required components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import type { ProductTypeList } from "@/types";
