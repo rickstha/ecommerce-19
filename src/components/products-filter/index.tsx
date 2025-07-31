@@ -5,7 +5,6 @@ import productsSizes from "../../utils/data/products-sizes";
 import productsTypes from "../../utils/data/products-types";
 import Checkbox from "./form-builder/checkbox";
 import CheckboxColor from "./form-builder/checkbox-color";
-
 const { createSliderWithTooltip } = Slider;
 const Range = createSliderWithTooltip(Slider.Range);
 
