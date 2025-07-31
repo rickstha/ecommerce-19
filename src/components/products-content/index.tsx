@@ -9,7 +9,7 @@ const ProductsContent = () => {
     <section className="products-content">
       <div className="products-content__intro">
         <h2>
-          Men's Tops - Shop <span>(133)</span>
+          Men's Tops <span>(133)</span>
         </h2>
         <button
           type="button"
@@ -22,7 +22,7 @@ const ProductsContent = () => {
           className={`products-content__filter ${orderProductsOpen ? "products-order-open" : ""}`}
         >
           <div className="products__filter__select">
-            <h4>Show products: Shop</h4>
+            <h4>Show products: </h4>
             <div className="select-wrapper">
               <select>
                 <option>Popular</option>
@@ -30,7 +30,7 @@ const ProductsContent = () => {
             </div>
           </div>
           <div className="products__filter__select">
-            <h4>Sort by: Shop</h4>
+            <h4>Sort by: </h4>
             <div className="select-wrapper">
               <select>
                 <option>Popular</option>
