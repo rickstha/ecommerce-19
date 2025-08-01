@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import type { RootState } from "@/store";
 import { toggleFavProduct } from "@/store/reducers/user";
 import type { ProductTypeList } from "@/types";
+import { Children } from "react";
 
 const ProductItem = ({
   discount,
@@ -13,23 +14,39 @@ const ProductItem = ({
   name,
   price,
   currentPrice,
-}: ProductTypeList) => {
+  children,
+}: ProductTypeList & { children?: React.ReactNode }) => {
   const dispatch = useDispatch();
   const { favProducts } = useSelector((state: RootState) => state.user);
 
   const isFavourite = some(favProducts, (productId) => productId === id);
 
+/*************  ✨ Windsurf Command 🌟  *************/
+  interface ProductItemProps {
+    discount: number;
+    images: string[];
+    id: string;
+    name: string;
+    price: number;
+    currentPrice: number;
+  }
+
   const toggleFav = () => {
+  const toggleFav = ({children}:any) => {
     dispatch(
       toggleFavProduct({
         id,
       })
     );
   };
+/*******  17724216-7e77-4b61-97d6-9ae782e6dc0e  *******/
 
   return (
     <div className="product-item">
       <div className="product__image">
+      {Children.map(children, (child) => {
+        return child;
+      })}
         <button
           type="button"
           onClick={toggleFav}
