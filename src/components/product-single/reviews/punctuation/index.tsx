@@ -1,5 +1,4 @@
-//done no error
-//need a countdown here with dinamic design
+//done
 
 import Rater from "react-rater";
 import type { PunctuationType } from "@/types";
@@ -14,7 +13,6 @@ const Punctuation = ({
 
   return (
     <section className="product-punctuation">
-      {/* countdown here */}
       <div className="product-punctuation__values">
         <h3>{punctuation}</h3>
 
