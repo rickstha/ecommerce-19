@@ -21,32 +21,21 @@ const ProductItem = ({
 
   const isFavourite = some(favProducts, (productId) => productId === id);
 
-/*************  ✨ Windsurf Command 🌟  *************/
-  interface ProductItemProps {
-    discount: number;
-    images: string[];
-    id: string;
-    name: string;
-    price: number;
-    currentPrice: number;
-  }
-
   const toggleFav = () => {
-  const toggleFav = ({children}:any) => {
     dispatch(
       toggleFavProduct({
         id,
       })
     );
   };
-/*******  17724216-7e77-4b61-97d6-9ae782e6dc0e  *******/
 
   return (
     <div className="product-item">
+      <p>{children}</p>
       <div className="product__image">
-      {Children.map(children, (child) => {
-        return child;
-      })}
+        {Children.map(children, (child) => {
+          return child;
+        })}
         <button
           type="button"
           onClick={toggleFav}

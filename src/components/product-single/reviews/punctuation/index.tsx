@@ -17,21 +17,6 @@ const Punctuation = ({
         <h3>{punctuation}</h3>
 
         <Rater total={5} interactive={false} rating={punctuation} />
-        {/* main code start */}
-        <div>
-          <span className="product-punctuation__values__text">
-            {punctuation} / 5
-          </span>
-          <span className="product-punctuation__values__text">
-            {votes.reduce((acc, vote) => acc + vote.count, 0)} votes
-          </span>
-          <span className="product-punctuation__values__text">
-            {countOpinions} opinions
-          </span>
-        </div>
-
-        {/* main code end here */}
-
         <p>
           <i className="icon-avatar" />
           {countOpinions} all opinions
