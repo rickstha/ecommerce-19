@@ -1,10 +1,10 @@
 type CheckboxType = {
-  type?: string;
   label: string;
   name: string;
+  //optional code
   number?: number;
   id?: number;
-
+  type?: string;
   mainChar: string;
   mainData?: any;
   checkData?: boolean;
