@@ -1,7 +1,6 @@
 import { some } from "lodash";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-
 import type { RootState } from "@/store";
 import { toggleFavProduct } from "@/store/reducers/user";
 import type { ProductTypeList } from "@/types";

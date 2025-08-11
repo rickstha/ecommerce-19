@@ -14,7 +14,6 @@ import CheckboxColor from "../../products-filter/form-builder/checkbox-color";
 type ProductContent = {
   product: ProductType;
 };
-
 const Content = ({ product }: ProductContent) => {
   const dispatch = useDispatch();
   const [count, setCount] = useState<number>(1);
